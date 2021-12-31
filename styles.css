@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+h1{
+    font-size: 10vw;
+}
+h2{
+    font-size: 1.5vw;
+    text-decoration: underline;
+}
+.heading-text{
+    text-align: center;
+    
+}
+
+
+/* navbar */
+nav{
+    position: fixed;
+    padding: 10px 0 10px;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    font-family: 'Kanit', sans-serif;
+}
+li{
+    display: inline;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 8px 80px;
+}
+ul li a:hover{
+    background-color: rgb(219, 219, 219);
+}
+
+
+/* welcome section */
+#welcome-section{
+    animation: gradient 30s;
+    animation-iteration-count: infinite;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    transition: gradient 4s 1s;
+    height: 130vh;
+    width: 100vw;
+}
+.arrows{
+    font-size: 200px;
+}
+
+.vert-cent{
+    transform: translateY(35vh);
+}
+
+@keyframes gradient{
+    0% {
+        background: #7AD8F5;
+      }
+      20% {
+        background: #7b4188;
+      }
+      40% {
+        background: #cf3266;
+      }
+      60% {
+        background: #FECF87;
+      }
+      80% {
+        background: #AEE77E;
+      }
+      100% {
+        background: #7AD8F5;
+      }
+}
+
+
+/* about me */
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-40px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+#about-me{
+    height: 130vh;
+    width: 100vw;
+    background-color: #EB5160;
+}
+.about-me-info{
+    margin: 0 100px;
+}
+.about-me-heading{
+    font-size: 3vw;
+    animation: float 6s ease-in-out infinite;
+    font-family: 'Caveat', cursive;
+}
+.about-me-paragraph{
+    font-size: 1.5vw;
+    font-family: 'Heebo', sans-serif;
+}
+.link{
+    text-decoration: none;
+}
+
+/* contact me */
+#contact{
+    height: 130vh;
+    width: 100vw;
+    background-color: #40b6b0;
+}
+.contact-me{
+    text-align: center;
+    padding-top: 20vh;
+    margin-bottom: 200px;
+}
+.icon{
+    max-width: 300px;
+    max-width: 300px;
+}
+.icon-box:hover{
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+.icon-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+}
+.icon-box{
+    margin: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* footer */
+footer{
+    bottom: 0;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .about-me-heading{
+        font-size: 3vw;
+    }
+    .about-me-paragraph{
+        font-size: 2vw;
+    }
+    #contact{
+        height: 160vh;
+    }
+    ul li a{
+        font-size: 15px;
+        padding: 10px 10px 10px;
+    }
+    h1{
+        font-size: 12vw;
+        
+    }
+    h2{
+        font-size: 4vw;
+        text-decoration: underline;
+    }
+    .about-me-info{
+        margin: 0 20px;
+    }
+}
+@media (max-width: 500px) {
+    .about-me-heading{
+        font-size: 4vw;
+    }
+    .about-me-paragraph{
+        font-size: 4vw;
+    }
+}
